@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import styles from './Container.module.css';
+import css from './Container.module.css';
 
 const Container = ({ children }) => (
-    <div className={styles.container}>{children}</div>
+    <div className={css.container}>{children}</div>
 )
 
 Container.defaultProps = {

@@ -5,7 +5,7 @@ import ContactForm from '../components/ContactForm/ContactForm';
 import Filter from '../components/Filter/Filter';
 import ContactList from '../components/ContactList/ContactList';
 
-import styles from '../index.css';
+import css from '../index.css';
 
 export class App extends Component {
     state = {
@@ -60,9 +60,9 @@ export class App extends Component {
 
         return (
             <Container>
-                <h1 className={styles.title}>Phonebook</h1>
+                <h1 className={css.title}>Phonebook</h1>
                 <ContactForm onSubmit={this.addContact} />
-                <h2 className={styles.title}>Contacts</h2>
+                <h2 className={css.title}>Contacts</h2>
                 <Filter value={filter} onChange={this.changeFilter} />
                 <ContactList contacts={filteredResults} onDeleteContact={this.deleteContact}/>
             </Container>
